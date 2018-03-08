@@ -16,7 +16,7 @@
                     <div class="databox radius-bordered bg-white"> <%--first button div--%>
                           <div class="col-lg-12 col-sm-12 col-xs-12">
                               <div class="buttons-preview">
-                                  <a href="javascript:void(0);" class="btn btn-warning shiny"><div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-book"></i>חנה המלכה</div></a>
+                                  <a href="javascript:void(0);" class="btn btn-warning shiny"><div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-book"></i>כיתות</div></a>
                               </div>
                           </div>
                     </div>
@@ -25,7 +25,7 @@
                     <div class="databox radius-bordered bg-white"><%--second button div--%>
                         <div class="col-lg-12 col-sm-12 col-xs-12">
                               <div class="buttons-preview">
-                                  <a href="javascript:void(0);" class="btn btn-info shiny"><div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-graduation-cap"></i>חנה הפח</div></a>
+                                  <a href="javascript:void(0);" class="btn btn-info shiny"><div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-graduation-cap"></i>תלמידים</div></a>
                               </div>
                           </div>
                     </div>
