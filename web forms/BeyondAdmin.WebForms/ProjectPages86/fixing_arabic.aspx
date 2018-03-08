@@ -16,7 +16,7 @@
                     <div class="databox radius-bordered bg-white"> <%--first button div--%>
                           <div class="col-lg-12 col-sm-12 col-xs-12">
                               <div class="buttons-preview">
-                                  <a href="javascript:void(0);" class="btn btn-warning shiny"><div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-book"></i>כיתות</div></a>
+                                  <a href="javascript:void(0);" class="btn btn-warning shiny"><div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-book"></i>חנה המלכה</div></a>
                               </div>
                           </div>
                     </div>
