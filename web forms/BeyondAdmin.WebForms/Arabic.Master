@@ -1,0 +1,205 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Arabic.master.cs" Inherits="BeyondAdmin.WebForms.Arabic" %>
+
+<%@ Register TagPrefix="asp" Namespace="BeyondAdmin.WebForms.Helpers" Assembly="BeyondAdmin.WebForms" %>
+
+<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.7
+Version: 1.6.1
+Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+-->
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="description" content="@ViewBag.Description" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+    <title><%: Page.Title %></title>
+
+    <!--Basic Styles-->
+    <%: Styles.Render("~/css/bootstrap") %>
+    <%: Styles.Render("~/css/bootstrap-rtl") %>
+    <link id="bootstrap_rtl_link" href="" rel="stylesheet" />
+
+
+   <!--Fonts-->
+    <link href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300"
+        rel="stylesheet" type="text/css">
+
+    <!--Beyond styles-->
+    <%: Styles.Render("~/css/beyond-rtl") %>
+    <link id="skin_link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <%: Scripts.Render("~/bundles/skin") %>
+
+    <link href="~/assets/img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <!-- Loading Container -->
+        <div class="loading-container">
+            <div class="loader"></div>
+        </div>
+        <!--  /Loading Container -->
+        <!-- Navbar - blueBar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- NavBar buttons --->
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-left">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+
+                            <li>
+                                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                    <div class="avatar" title="View your public profile">
+                                       <%-- <img src="/assets/img/avatars/foxi.jpg">--%>
+                                        <img src="/assets/img/avatars/squarle2.png">
+                                    </div>
+                                    <section>
+                                        <h2 ><span class="profile"><span>ברוכה הבאה מיכל! </span></span></h2>
+                                    </section>
+                                </a>
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                    <li class="username"><a>מיכל כהן</a></li>
+                                    <li class="email"><a>MichalCohen@gmail.com</a></li>
+                                    <!--Avatar Area-->
+                                    <li>
+                                        <div class="avatar-area">
+                                            <%--<img src="/assets/img/avatars/foxi.jpg" class="avatar">--%>
+                                            <img src="/assets/img/avatars/squarle2.png" class="avatar">
+                                            <span class="caption">שנה תמונת פרופיל</span>
+                                        </div>
+                                    </li>
+                                    <!--Avatar Area-->
+                                    <li class="edit">
+                                        <a href="profile.html" class="pull-left">פרטי פרופיל</a>
+                                    </li>
+                                    <!--Theme Selector Area-->
+                                    <li class="theme-area">
+                                        <ul class="colorpicker" id="skin-changer">
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="/assets/css/skins/blue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="/assets/css/skins/azure.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="/assets/css/skins/teal.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="/assets/css/skins/green.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="/assets/css/skins/orange.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="/assets/css/skins/pink.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="/assets/css/skins/darkred.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="/assets/css/skins/purple.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="/assets/css/skins/darkblue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="/assets/css/skins/gray.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="/assets/css/skins/black.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="/assets/css/skins/deepblue.min.css"></a></li>
+                                        </ul>
+                                    </li>
+                                    <!--/Theme Selector Area-->
+                                    <li class="dropdown-footer">
+                                        <a href="login.html">
+                                            התנתק
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            <!-- /Account Area -->
+                            <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                            <!-- Settings -->
+                        </ul><div class="setting">
+                            <a id="btn-setting" title="Setting" href="#">
+                                <i class="icon glyphicon glyphicon-cog"></i>
+                            </a>
+                        </div><div class="setting-container">
+                            <label>
+                                <ul>
+                                    <a href="">
+                                        שנה סיסמא
+                                    </a>
+                                </ul>
+                            </label>
+                        </div>
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+        <!-- /Navbar - BlueBar -->
+        <!-- Main Container -->
+        <div class="main-container container-fluid">
+            <!-- Page Container -->
+            <div class="page-container">
+                <!-- Page Content -->
+                                    <!-- Page Breadcrumb -->
+                    <div class="page-breadcrumbs">
+                         <ul class="breadcrumbs">
+                               <div class="row">
+                                  <div class="row fontawesome-icon-list">
+                                    <div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-home"></i>מסך הבית</div>
+                                      <div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-book"></i>כיתות</div>
+                                      <div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-graduation-cap"></i>תלמידים</div>
+                                      <div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-pencil"></i>סגל ההוראה</div>
+                                       <div class="fa-hover col-md-3 col-sm-4"><i class="fa fa-heart"></i>טיפולים</div>
+
+                                 </div>
+                              </div>
+                         </ul>
+                    </div>
+                    <!-- /Page Breadcrumb -->
+                <div >
+
+                    <!-- Page Header -->
+                    <div class="page-header position-relative">
+                        <div class="header-title">
+                            <h1>
+                                <%: Page.Title %>
+                            </h1>
+                        </div>
+                        <!--Header Buttons-->
+                        <div class="header-buttons">
+                            <a class="refresh" id="refresh-toggler" href="">
+                                <i class="glyphicon glyphicon-refresh"></i>
+                            </a>
+                            <a class="fullscreen" id="fullscreen-toggler" href="#">
+                                <i class="glyphicon glyphicon-fullscreen"></i>
+                            </a>
+                        </div>
+                        <!--Header Buttons End-->
+                    </div>
+                    <!-- /Page Header -->
+                    <!-- Page Body -->
+                    <div class="page-body" >
+                        <!-- Your Content Goes Here -->
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <!-- /Page Body -->
+                </div>
+                <!-- /Page Content -->
+            </div>
+            <!-- /Page Container -->
+            <!-- Main Container -->
+
+        </div>
+    </form>
+
+    <!--Basic Scripts-->
+    <%: Scripts.Render("~/bundles/jquery") %>
+    <%: Scripts.Render("~/bundles/bootstrap") %>
+    <!--Beyond Scripts-->
+    <%: Scripts.Render("~/bundles/beyond") %>
+
+    <!--Page Related Scripts-->
+    <asp:ContentPlaceHolder ID="PageScriptContent" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
